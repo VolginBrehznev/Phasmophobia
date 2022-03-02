@@ -79,4 +79,10 @@ span{
      font-size: larger;
  }
 
- 
+ .mite
+ {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     gap: 19%;
+ }
