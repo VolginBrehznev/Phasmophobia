@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: 'october_crowregular';
-    src: url('october_crow-webfont.woff2') format('woff2'),
-         url('october_crow-webfont.woff') format('woff');
+    src: url('font/october_crow-webfont.woff2') format('woff2'),
+         url('font/october_crow-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
