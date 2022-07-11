@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Phasmophobia Wiki</title>
         <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="js.js">
         <style>
             a { text-decoration: none; }
         </style>
@@ -35,15 +36,31 @@
         
         <div>
             <p>
-                - The Moroi has an ability to "curse" a target; this is likely through the player asking a question and obtaining a response from the spirit box. The curse causes the target's sanity to drop faster while in the investigation area
+                - The Moroi has an ability to "curse" a target; if a player asks a question and obtains a response from the spirit box, that player will receive the curse. Similarly, hearing ghost sounds (such as footsteps and whispers) on the parabolic microphone will result in a curse.
             </p>
             <p>
-                - When smudged during a hunt, the duration where the ghost cannot see nor kill players is observed to be 12 seconds (twice as long as the usual 6 seconds), though the exact value has not been confirmed.
+                - When a player is cursed, their passive sanity drain will be doubled. Being in a lit area will not prevent their sanity drain. Walking outside the investigation area temporarily pauses the curse, while consuming Sanity Pills removes the curse for that player (they can later be re-cursed). Multiple players can be cursed at the same time, but curses cannot add up on a single player.
             </p>
             <p>
-                - The Moroi has been observed to be faster during hunts the lower the average sanity, with recorded base speeds of approximately 1.4 m/s at 45% average sanity, and 2.1 m/s at 0% average sanity.[1] The ghost appears to speed up with line-of-sight of a player.
+                - The Moroi's speed is dependent on the average sanity at the beginning of the hunt. The base speed increases for every 5% average sanity drop. For example, the Moroi will move at 1.5 m/s at 50% average sanity, 1.875 m/s at 25% average sanity, and 2.25 m/s at 0% average sanity. Based on the example, the base speed of the Moroi increases by 0.075 m/s for every 5% average sanity drop. The list below is the base speed of the Moroi.
             </p>
+
+            <button onclick="show()">Cliquez ici pour avoir le tableau de vitesse</button>
+
+        <div id="maDIV" style="display:none;">
+            <img src="img/tabmoroi.png" alt="TabMoroi">
         </div>
+
+        <script>
+            function show() {
+              var div = document.getElementById("maDIV");
+              if (div.style.display === "none") {
+                div.style.display = "block";
+              } else {
+                div.style.display = "none";
+              }
+            }
+        </script>
 
         <table style="border-top: 1px solid #8D9697; border-bottom: 1px solid #8D9697;" align="center" width="100%">
             <tbody><tr>
